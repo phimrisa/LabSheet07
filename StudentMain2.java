@@ -19,7 +19,7 @@ public class StudentMain2 {
             /*
             int homework_score = scanner.nextInt();
             s1.doHomework(homework_score);
-            If you only need to receive the input and send it without any calculation etc., you shouldn't create a new variable.
+            P.S. If you only need to receive the input just to return it without any calculation etc., creating a new variable is unnecessary.
             */
             st[i].doHomework(scanner.nextInt());
 
@@ -33,3 +33,4 @@ public class StudentMain2 {
         }
     }
 }
+
