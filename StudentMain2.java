@@ -6,7 +6,7 @@ public class StudentMain2 {
 
         Student[] st = new Student[10];
 
-        for(int i=0; i< st.length; i++){
+        for(int i=0; i<st.length; i++){
             st[i] = new Student();
 
             System.out.print("Enter student name: ");
@@ -33,4 +33,5 @@ public class StudentMain2 {
         }
     }
 }
+
 
