@@ -1,9 +1,7 @@
 import javax.swing.*;
-import java.util.Scanner;
 
 public class ProductMain {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         Product product = new Product();
 
         JOptionPane.showMessageDialog(null,
@@ -20,7 +18,6 @@ public class ProductMain {
 
         if(add_more_item == JOptionPane.YES_OPTION){
             product.addStock(Integer.parseInt(JOptionPane.showInputDialog("How many items to add in stock?:")));
-            //product.quantity = Integer.parseInt(JOptionPane.showInputDialog("How many items to add in stock?:"));
         }
 
         int change_price = JOptionPane.showConfirmDialog(null,
@@ -28,9 +25,7 @@ public class ProductMain {
 
         if(change_price == JOptionPane.YES_OPTION){
             product.changePrice(Double.parseDouble(JOptionPane.showInputDialog("How much is the new price per item?:")));
-            //product.price = Double.parseDouble(JOptionPane.showInputDialog("How much is the new price per item?:"));
         }
-
         System.out.println();
 
         product.showInfo();
