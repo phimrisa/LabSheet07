@@ -24,6 +24,7 @@ public class ProductMain2 {
             System.out.print("Invalid number! Enter a number, again: ");
             number = scanner.nextInt();
         }
+        System.out.println();
 
         if(number == 1){
             product1.showInfo();
@@ -32,7 +33,14 @@ public class ProductMain2 {
             product1.sell(scanner.nextInt());
             System.out.println("-----------------------------------");
             product1.showInfo();
-
+        }
+        if(number == 2){
+            product2.showInfo();
+            System.out.println("-----------------------------------");
+            System.out.print("How many " + product2.name + " do you want to buy? ");
+            product2.sell(scanner.nextInt());
+            System.out.println("-----------------------------------");
+            product2.showInfo();
         }
     }
 }
